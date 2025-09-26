@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Changer</title>
+  <style>
+    body {
+      background-color:#fff;
+
+    }
+
+    .button {
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      cursor: pointer;
+   
+    }
+
+    .box1 {
+      background-color: aqua;
+    }
+
+    .box2 {
+      background-color: grey;
+    }
+
+    .box3 {
+      background-color: yellow;
+    }
+
+    .box4 {
+      background-color: pink;
+    }
+
+    .style {
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   
+    
+    }
+
+    .colors {
+    
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="style">Color Changer</h1>
+  <p class="style">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias perferendis alias!
+  </p>
+
+  <div class="colors">
+    <button class="button box1" id="aqua"></button>
+    <button class="button box2" id="grey"></button>
+    <button class="button box3" id="yellow"></button>
+    <button class="button box4" id="pink"></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

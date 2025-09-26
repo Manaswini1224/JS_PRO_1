@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #2c2c2c;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+            width: 350px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00e676;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        form p {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #f5f5f5;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #555;
+            outline: none;
+            background: #424242;
+            color: #fff;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #00e676;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00e676;
+            color: #212121;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1de9b6;
+            transform: translateY(-2px);
+        }
+
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffeb3b;
+            background: #383838;
+            border-radius: 8px;
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bmi-value {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .category {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        #weight_guide {
+            margin-top: 25px;
+            padding: 20px;
+            background: #383838;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        #weight_guide h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #ff9800;
+            font-size: 18px;
+        }
+
+        #weight_guide p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #f5f5f5;
+        }
+
+        .error {
+            color: #f44336;
+            font-size: 16px;
+        }
+
+        /* Simple color coding for BMI categories */
+        .underweight { color: #2196f3; }
+        .normal { color: #4caf50; }
+        .overweight { color: #ff9800; }
+        .obese { color: #f44336; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <form id="bmiForm">
+            <p>
+                <label>Height in cm</label>
+                <input type="text" id="height" placeholder="Enter your height"/>
+            </p>
+            <p>
+                <label>Weight in kg</label>
+                <input type="text" id="weight" placeholder="Enter your weight"/>
+            </p>
+            <button type="submit">CALCULATE</button>
+            <div id="results"></div>
+            
+            <div id="weight_guide">
+                <h3>BMI Weight Guide</h3>
+                <p>Underweight = Less than 18.5</p>
+                <p>Normal Range = 18.5 to 24.9</p>
+                <p>Overweight = 25.0 to 29.9</p>
+            </div>
+        </form> 
+    </div>
+
+    <script src="pro2.js"></script>
+</body>
+</html>

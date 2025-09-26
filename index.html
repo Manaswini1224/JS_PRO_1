@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    body {
+      background-color: #212121;
+    }
+
+    .buttons {
+      color: black;
+      font-family: monospace;
+      font-size: large;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 50px;              /* large button size */
+      cursor: pointer;
+      background-color: #8C92AC;
+      border: none;               /* remove default border */
+    }
+
+    .nav {
+      color: black;
+      font-size: 50px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      margin: 20px;
+      cursor: pointer;
+      font-weight: bolder;
+      font-family: monospace;
+      background-color: #8C92AC;
+      border: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .pro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="nav">HOME</button>
+    <button class="nav" onclick="location.reload()">REFRESH</button>
+  </nav>
+
+  <div class="pro">
+      <button class="buttons" onclick="window.location.href='project1/index.html'">
+    PROJECT 1 - COLOR CHANGER
+  </button>
+    <button class="buttons" onclick="window.location.href='project2/index.html'">PROJECT 2 - BMI CALCULATOR</button>
+    <button class="buttons"  onclick="window.location.href='project3/index.html'">PROJECT 3 - DIGITAL CLOCK</button>
+    <button class="buttons" onclick="window.location.href='project4/index.html'" >PROJECT 4 - GUESS THE NUMBER</button>
+  </div>
+</body>
+</html>
